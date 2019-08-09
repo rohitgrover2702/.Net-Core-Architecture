@@ -11,13 +11,15 @@ namespace Kobe.Domain.Dtos
         {
 
         }
+        public int Id { get; set; }
+        public Guid KeyId { get; set; }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Email { get; set; }
-        public Guid Id { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public string Email { get; set; }        
+
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
         public Guid? CreatedBy { get; set; }
         public bool IsDeleted { get; set; }
         public string Populationdensity
@@ -27,5 +29,7 @@ namespace Kobe.Domain.Dtos
                 return FirstName + "" + LastName;
             }
         }
+
+       
     }
 }

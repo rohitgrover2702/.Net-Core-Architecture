@@ -7,21 +7,20 @@ using Kobe.Data.EntityDBMapping;
 
 namespace Kobe.Data.Context
 {
-    public class KobeContext : IdentityDbContext<ApplicationUser>
-    {
-        //public DbSet<UserDetail> User { get; set; }       
+    public class KobeContext : DbContext
+    {        
 
         public KobeContext(DbContextOptions<KobeContext> options) : base(options)
         {
 
         }
-        public DbSet<Country> Country { get; set; }
-
+        public DbSet<KobeCountry> Country { get; set; }
+        public DbSet<KobeUser> User { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Country>(new CountryMap().Configure);
-           // modelBuilder.Entity<UserDetail>(new UserDetailMap().Configure);            
+            modelBuilder.Entity<KobeCountry>(new CountryMap().Configure);
+            modelBuilder.Entity<KobeUser>(new UserDetailMap().Configure);            
             // ModelBuilderExtensions.Seed(modelBuilder);
 
         }

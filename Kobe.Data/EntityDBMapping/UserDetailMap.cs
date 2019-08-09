@@ -7,27 +7,41 @@ using System.Text;
 
 namespace Kobe.Data.EntityDBMapping
 {
-    public class UserDetailMap : EntityBaseMap<UserDetail>
+    public class UserDetailMap : EntityBaseMap<KobeUser>
     {
-        public new void Configure(EntityTypeBuilder<UserDetail> builder)
+        public new void Configure(EntityTypeBuilder<KobeUser> builder)
         {
-            builder.ToTable("UserDetail");          
-            builder.Property(c => c.FirstName)
+            builder.ToTable("KobeUser");          
+            builder.Property(c => c.Username)
                 .IsRequired()
-                .HasColumnName("FirstName")
+                .HasColumnName("Username")
                 .HasColumnType("varchar(150)");
-            builder.Property(c => c.FirstName)
-               .IsRequired()
-               .HasColumnName("LastName")
-               .HasColumnType("varchar(150)");
-            builder.Property(c => c.LastName)
+            builder.Property(c => c.Email)
                .IsRequired()
                .HasColumnName("Email")
                .HasColumnType("varchar(150)");
-            builder.Property(c => c.Email)
+            builder.Property(c => c.HashedPassword)
                .IsRequired()
-               .HasColumnName("Password")
-               .HasColumnType("varchar(150)");
+               .HasColumnName("HashedPassword")
+               .HasColumnType("binary(128)");
+            builder.Property(c => c.Salt)
+               .IsRequired()
+               .HasColumnName("Salt")
+               .HasColumnType("binary(128)");
+            builder.Property(c => c.Token)             
+              .HasColumnName("Token")
+              .HasColumnType("varchar(150)");
+            builder.Property(c => c.TokenExpiryDate)            
+              .HasColumnName("TokenExpiryDate")
+              .HasColumnType("DateTime");
+            builder.Property(c => c.IsLocked)
+              .IsRequired()
+              .HasColumnName("IsLocked")
+              .HasColumnType("bit");
+            builder.Property(c => c.IsDeactivated)
+              .IsRequired()
+              .HasColumnName("IsDeactivated")
+              .HasColumnType("bit");
         }
     }
 }

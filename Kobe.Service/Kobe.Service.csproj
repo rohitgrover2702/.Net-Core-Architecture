@@ -13,4 +13,10 @@
     <ProjectReference Include="..\Kobe.Domain\Kobe.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.http.connections\1.0.1\lib\netcoreapp2.1\Microsoft.AspNetCore.Http.Connections.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

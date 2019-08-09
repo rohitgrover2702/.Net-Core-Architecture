@@ -5,8 +5,10 @@ D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\ne
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Kobe.Data.pdb
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Kobe.Domain.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Server.Kestrel.Core.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Kobe.Domain.pdb
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Server.Kestrel.Core.xml
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\obj\Debug\netcoreapp2.1\Kobe.Data.csprojAssemblyReference.cache
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\obj\Debug\netcoreapp2.1\Kobe.Data.csproj.CoreCompileInputs.cache
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\obj\Debug\netcoreapp2.1\Kobe.Data.AssemblyInfoInputs.cache
@@ -14,5 +16,3 @@ D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\obj\Debug\ne
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\obj\Debug\netcoreapp2.1\Kobe.Data.csproj.CopyComplete
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\obj\Debug\netcoreapp2.1\Kobe.Data.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\obj\Debug\netcoreapp2.1\Kobe.Data.pdb
-D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Server.Kestrel.Core.dll
-D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Server.Kestrel.Core.xml

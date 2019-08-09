@@ -5,7 +5,9 @@ D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcore
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.pdb
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.Data.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.Domain.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.Service.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.Data.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.Service.pdb
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.Domain.pdb
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\obj\Debug\netcoreapp2.1\Kobe.csprojAssemblyReference.cache
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\obj\Debug\netcoreapp2.1\Kobe.csproj.CoreCompileInputs.cache
@@ -17,5 +19,3 @@ D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\obj\Debug\netcore
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\obj\Debug\netcoreapp2.1\Kobe.csproj.CopyComplete
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\obj\Debug\netcoreapp2.1\Kobe.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\obj\Debug\netcoreapp2.1\Kobe.pdb
-D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.Service.dll
-D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe\bin\Debug\netcoreapp2.1\Kobe.Service.pdb

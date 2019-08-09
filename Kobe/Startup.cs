@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Kobe.Data.Context;
 using Kobe.Data.Repository;
 using Kobe.Domain.Entities;
 using Kobe.Service.Abstract;
 using Kobe.Service.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -16,6 +18,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Kobe
 {
@@ -34,8 +38,37 @@ namespace Kobe
             services.AddDbContext<KobeContext>(
             options => options.UseSqlServer(Configuration.GetConnectionString("defaultConnection"), b => b.MigrationsAssembly("Kobe.Data")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddScoped<IEntityBaseRepository<Country>, EntityBaseRepository<Country>>();
-            services.AddScoped<ICountryService, CountryService>();                        
+            services.AddScoped<IEntityBaseRepository<KobeCountry>, EntityBaseRepository<KobeCountry>>();
+            services.AddScoped<IEntityBaseRepository<KobeUser>, EntityBaseRepository<KobeUser>>();
+            services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<ICountryService, CountryService>();
+            services.AddScoped<IMembershipService, MembershipService>();            
+            
+            // Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "MyAPI",
+                    Description = "Kobe API"
+                });
+            });
+            // Json web token
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+              .AddJwtBearer(options =>
+               {
+                   options.TokenValidationParameters = new TokenValidationParameters
+                   {
+                       ValidateIssuer = true,
+                       ValidateAudience = true,
+                       ValidateLifetime = true,
+                       ValidateIssuerSigningKey = true,
+                       ValidIssuer = Configuration["Jwt:Issuer"],
+                       ValidAudience = Configuration["Jwt:Issuer"],
+                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                   };
+               });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,8 +82,14 @@ namespace Kobe
             {
                 // app.UseHsts();
             }
+            app.UseSwagger();
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyAPI");
+            });
             app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseMvc();
         }
     }

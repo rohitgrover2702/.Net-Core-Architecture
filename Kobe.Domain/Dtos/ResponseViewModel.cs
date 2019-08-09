@@ -16,4 +16,14 @@ namespace Kobe.Domain.Dtos
         public int status { get; set; }
         public int Total { get; set; }
     }
+
+    public class Constants
+    {
+        public const string Error = "Some Internal Error Occurred";
+        public const string Success = "Data Saved Successfully";
+        public const string Delete = "Data Deleted Successfully";
+        public const string Warning = "Data Is Not In Proper Format";
+        public const string Retreived = "Data Retrieved Successfully";
+        public const string NotFound = "Data Not Found";
+    }
 }

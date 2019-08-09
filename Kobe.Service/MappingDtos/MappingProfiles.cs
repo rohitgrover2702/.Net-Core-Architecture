@@ -6,6 +6,6 @@ namespace Kobe.Service.MappingDtos
 {
     public class MappingProfiles : Profile
     {
-        public MappingProfiles() => CreateMap<Country, CountryDTO>();
+        public MappingProfiles() => CreateMap<KobeCountry, CountryDTO>();
     }
 }

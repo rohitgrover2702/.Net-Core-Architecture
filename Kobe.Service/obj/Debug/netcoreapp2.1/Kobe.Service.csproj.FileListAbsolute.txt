@@ -1,7 +1,9 @@
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Service.deps.json
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Service.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Service.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Data.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Domain.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Data.pdb
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Domain.pdb
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\obj\Debug\netcoreapp2.1\Kobe.Service.csprojAssemblyReference.cache
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\obj\Debug\netcoreapp2.1\Kobe.Service.csproj.CoreCompileInputs.cache
@@ -10,7 +12,5 @@ D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\obj\Debug
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\obj\Debug\netcoreapp2.1\Kobe.Service.csproj.CopyComplete
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\obj\Debug\netcoreapp2.1\Kobe.Service.dll
 D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\obj\Debug\netcoreapp2.1\Kobe.Service.pdb
-D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Data.dll
-D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Kobe.Data.pdb
-D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Connections.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\Kobe\Kobe.Service\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Connections.xml

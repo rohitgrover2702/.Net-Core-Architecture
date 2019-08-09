@@ -10,9 +10,9 @@ namespace Kobe.Service.Services
 {
     public class CountryService : ICountryService
     {
-        private readonly IEntityBaseRepository<Country> _countryRepository;
+        private readonly IEntityBaseRepository<KobeCountry> _countryRepository;
 
-        public CountryService(IEntityBaseRepository<Country> countryRepository)
+        public CountryService(IEntityBaseRepository<KobeCountry> countryRepository)
         {
             _countryRepository = countryRepository;
         }
@@ -25,6 +25,29 @@ namespace Kobe.Service.Services
             response.status = 1;
             response.message = "Data retreived successfully";
             return response;
+        }
+
+        public KobeCountry Post(KobeCountry country)
+        {
+            // Validate(country, Activator.CreateInstance<V>());
+
+            _countryRepository.Add(country);
+            return country;
+        }
+
+        public KobeCountry getCountryById(int? id)
+        {
+            return _countryRepository.GetById(id);
+        }
+
+        public void deleteCountryById(KobeCountry country)
+        {
+            _countryRepository.SoftDelete(country);
+        }
+
+        public KobeCountry updateCountryById(KobeCountry oldCountry, KobeCountry newCountry)
+        {
+           return _countryRepository.Edit(oldCountry, newCountry);
         }
     }
 }
